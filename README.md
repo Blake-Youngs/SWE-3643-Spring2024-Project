@@ -1,2 +1,12 @@
 # SWE-3643-Spring2024-Project
-A web based calculator utilizing Unit testing and end-to-end testing use NUnit and Playwright
+
+##Introduction##
+##Table of Contents##
+##Team Members##
+##Architecture##
+##Environment##
+##Executing the Web Application##
+##Executing Unit Tests##
+##Reviewing Unit Test Coverage##
+##Executing End-to-End Tests##
+##Static Analysis Final Video Presentation##
