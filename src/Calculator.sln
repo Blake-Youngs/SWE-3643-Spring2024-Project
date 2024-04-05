@@ -9,5 +9,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorEndToEndTests", "
 EndProject
 Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D6D8EF6-7A8E-4BD5-BAF0-83CAEA471047}.Builder|Any CPU.ActiveCfg = Builder|Any CPU
+		{3D6D8EF6-7A8E-4BD5-BAF0-83CAEA471047}.Builder|Any CPU.Build.0 = Builder|Any CPU
+		{940930D7-2DE9-4498-B1C9-1EB115EED65F}.Builder|Any CPU.ActiveCfg = Builder|Any CPU
+		{940930D7-2DE9-4498-B1C9-1EB115EED65F}.Builder|Any CPU.Build.0 = Builder|Any CPU
+		{08798459-75B7-4D9E-A4E6-96BE5AC8E7C0}.Builder|Any CPU.ActiveCfg = Builder|Any CPU
+		{08798459-75B7-4D9E-A4E6-96BE5AC8E7C0}.Builder|Any CPU.Build.0 = Builder|Any CPU
+		{C2BE79F6-F379-4B4A-96EB-B5C57D18D555}.Builder|Any CPU.ActiveCfg = Builder|Any CPU
+		{C2BE79F6-F379-4B4A-96EB-B5C57D18D555}.Builder|Any CPU.Build.0 = Builder|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Builder|Any CPU = Builder|Any CPU
 	EndGlobalSection
 EndGlobal

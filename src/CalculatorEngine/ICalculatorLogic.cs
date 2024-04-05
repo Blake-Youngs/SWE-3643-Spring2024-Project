@@ -1,7 +1,6 @@
 ﻿namespace CalculatorEngine;
 
-public interface ICalculatorLogic
-{
+public interface ICalculatorLogic {
     // Arithmetic Operations
     public double Addition(double inputA, double inputB); // A + B
     public double Subtraction(double inputA, double inputB); // A - B
@@ -20,6 +19,6 @@ public interface ICalculatorLogic
     
     
     // Miscellaneous Operations
-    public bool Equals(double inputA, double inputB); // A == B
+    public double Equals(double inputA, double inputB); // A == B
     public double Reciprocal(double inputA); // 1 / A
 }
