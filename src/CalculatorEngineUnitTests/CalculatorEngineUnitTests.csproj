@@ -7,6 +7,8 @@
 
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
+        <Configurations>Debug;Release;Builder</Configurations>
+        <Platforms>AnyCPU</Platforms>
     </PropertyGroup>
 
     <ItemGroup>
@@ -19,6 +21,10 @@
 
     <ItemGroup>
         <Using Include="NUnit.Framework"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CalculatorEngine\CalculatorEngine.csproj" />
     </ItemGroup>
 
 </Project>
