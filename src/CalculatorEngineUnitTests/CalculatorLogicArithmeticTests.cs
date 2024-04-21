@@ -1,78 +1,77 @@
-﻿using NUnit.Framework.Constraints;
-using System;
+﻿using CalculatorEngine;
 
 // ReSharper disable ConvertToConstant.Local
 
-namespace CalculatorEngineUnitTests {
-    public partial class CalculatorEngineUnitTests {
-        private CalculatorEngine.CalculatorLogic _calculatorEngine;
-        private double tolerance = 0.00000001;
+namespace CalculatorEngineUnitTests;
 
-        [SetUp]
-        public void Setup() {
-            _calculatorEngine = new CalculatorEngine.CalculatorLogic();
-        }
+public partial class CalculatorEngineUnitTests {
+    private CalculatorLogic _calculatorEngine;
+    private readonly double tolerance = 0.00000001;
 
-        [TearDown]
-        public void TearDown() {
-            _calculatorEngine = null;
-        }
+    [SetUp]
+    public void Setup() {
+        _calculatorEngine = new CalculatorLogic();
+    }
 
-        [Test]
-        public void Addition_AddTwoNumbers_ReturnsCorrectSum() {
-            // preq-UNIT-TEST-2
-            var inputA = 5.5;
-            var inputB = -3.15;
-            var expectedResult = 2.35;
+    [TearDown]
+    public void TearDown() {
+        _calculatorEngine = null;
+    }
 
-            var actualResult = _calculatorEngine.Addition(inputA, inputB);
+    [Test]
+    public void Addition_AddTwoNumbers_ReturnsCorrectSum() {
+        // preq-UNIT-TEST-2
+        var inputA = 5.5;
+        var inputB = -3.15;
+        var expectedResult = 2.35;
 
-            Assert.That(actualResult, Is.EqualTo(expectedResult));
-        }
+        var actualResult = _calculatorEngine.Addition(inputA, inputB);
 
-        [Test]
-        public void Subtraction_SubtractTwoNumbers_ReturnCorrectDifference() {
-            // preq-UNIT-TEST-3
-            var inputA = 27.93;
-            var inputB = 4;
-            var expectedResult = 23.93;
+        Assert.That(actualResult, Is.EqualTo(expectedResult));
+    }
 
-            var actualResult = _calculatorEngine.Subtraction(inputA, inputB);
+    [Test]
+    public void Subtraction_SubtractTwoNumbers_ReturnCorrectDifference() {
+        // preq-UNIT-TEST-3
+        var inputA = 27.93;
+        var inputB = 4;
+        var expectedResult = 23.93;
 
-            Assert.That(actualResult, Is.EqualTo(expectedResult));
-        }
+        var actualResult = _calculatorEngine.Subtraction(inputA, inputB);
 
-        [Test]
-        public void Multiplication_MultiplyTwoNumbers_ReturnCorrectProduct() {
-            // preq-UNIT-TEST-4
-            var inputA = 5;
-            var inputB = 7.1;
-            var expectedResult = 35.5;
+        Assert.That(actualResult, Is.EqualTo(expectedResult));
+    }
 
-            var actualResult = _calculatorEngine.Multiplication(inputA, inputB);
+    [Test]
+    public void Multiplication_MultiplyTwoNumbers_ReturnCorrectProduct() {
+        // preq-UNIT-TEST-4
+        var inputA = 5;
+        var inputB = 7.1;
+        var expectedResult = 35.5;
 
-            Assert.That(actualResult, Is.EqualTo(expectedResult));
-        }
+        var actualResult = _calculatorEngine.Multiplication(inputA, inputB);
 
-        [Test]
-        public void Division_DivideTwoNumbers_ReturnCorrectQuotient() {
-            // preq-UNIT-TEST-5
-            var inputA = 3.0;
-            var inputB = 9.0;
-            var expectedResult = 0.33333333;
+        Assert.That(actualResult, Is.EqualTo(expectedResult));
+    }
 
-            var actualResult = _calculatorEngine.Division(inputA, inputB);
+    [Test]
+    public void Division_DivideTwoNumbers_ReturnCorrectQuotient() {
+        // preq-UNIT-TEST-5
+        var inputA = 3.0;
+        var inputB = 9.0;
+        var expectedResult = 0.33333333;
 
-            Assert.That(actualResult, Is.EqualTo(expectedResult).Within(tolerance));
-        }
+        var actualResult = _calculatorEngine.Division(inputA, inputB);
 
-        [Test]
-        public void Division_DivideByZero_ThrowsDivideByZeroException() {
-            // preq-UNIT-TEST-6
-            var inputA = 11.2;
-            var inputB = 0;
+        Assert.That(actualResult, Is.EqualTo(expectedResult).Within(tolerance));
+    }
 
-            Assert.Throws<DivideByZeroException>(() => { _calculatorEngine.Division(inputA, inputB); });
-        }
+    [Test]
+    public void Division_DivideByZero_ThrowsDivideByZeroException() {
+        // preq-UNIT-TEST-6
+        var inputA = 11.2;
+        var inputB = 0;
+
+        Assert.Throws<DivideByZeroException>(() => { _calculatorEngine.Division(inputA, inputB); });
     }
 }

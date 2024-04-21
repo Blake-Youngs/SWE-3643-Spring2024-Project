@@ -1,7 +1,7 @@
 ﻿namespace CalculatorEngine;
 
 // CalculatorLogic covers all calculation logic related requirements.
-public partial class CalculatorLogic(int precision = 8) : ICalculatorLogic {
+public class CalculatorLogic(int precision = 8) : ICalculatorLogic {
     // Level of precision when comparing two floating point numbers.
     private readonly int _precision = precision;
 
@@ -63,10 +63,7 @@ public partial class CalculatorLogic(int precision = 8) : ICalculatorLogic {
     public double Factorial(double inputA) {
         // Preq-ENGINE-12
         double result = 1;
-        for (var i = 1; i <= inputA; i++)
-        {
-            result *= i;
-        }
+        for (var i = 1; i <= inputA; i++) result *= i;
 
         return result;
     }

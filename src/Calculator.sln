@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorEngineUnitTests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorEndToEndTests", "CalculatorEndToEndTests\CalculatorEndToEndTests.csproj", "{3D6D8EF6-7A8E-4BD5-BAF0-83CAEA471047}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorWebServerApp", "CalculatorWebServerApp\CalculatorWebServerApp.csproj", "{207F2B87-2614-4971-AFF9-9C3BB2E0A758}"
+EndProject
 Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3D6D8EF6-7A8E-4BD5-BAF0-83CAEA471047}.Builder|Any CPU.ActiveCfg = Builder|Any CPU
@@ -13,6 +15,8 @@ Global
 		{940930D7-2DE9-4498-B1C9-1EB115EED65F}.Builder|Any CPU.Build.0 = Builder|Any CPU
 		{08798459-75B7-4D9E-A4E6-96BE5AC8E7C0}.Builder|Any CPU.ActiveCfg = Builder|Any CPU
 		{08798459-75B7-4D9E-A4E6-96BE5AC8E7C0}.Builder|Any CPU.Build.0 = Builder|Any CPU
+		{207F2B87-2614-4971-AFF9-9C3BB2E0A758}.Builder|Any CPU.ActiveCfg = Debug|Any CPU
+		{207F2B87-2614-4971-AFF9-9C3BB2E0A758}.Builder|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Builder|Any CPU = Builder|Any CPU

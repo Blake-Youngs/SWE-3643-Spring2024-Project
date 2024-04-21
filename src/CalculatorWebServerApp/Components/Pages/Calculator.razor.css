@@ -1,0 +1,40 @@
+﻿h1 {
+    color: #000000;
+}
+
+.inner-box {
+    position: fixed;
+    background-color: #fdfdfd;
+    padding: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 800px;
+
+}
+
+.outer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.clear-button {
+    width: 100%;
+}
+
+.row {
+    display: col;
+    place-items: center;
+    padding: 10px;
+}
+
+.clear-button {
+    width: 100%;
+    color:#000000;
+    background-color:#EBEBEB;
+    border: 1px solid black;
+    font-size: 18px;
+    border-radius: 5px;
+}
