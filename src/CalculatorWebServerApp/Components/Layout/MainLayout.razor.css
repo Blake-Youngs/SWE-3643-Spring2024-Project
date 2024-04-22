@@ -1,7 +1,7 @@
 ﻿.inner-box {
     position: fixed;
     background-color: #fdfdfd;
-    padding: 30px;
+    padding: 50px;
     left: 50%;
     transform: translateX(-50%);
     width: 650px;
