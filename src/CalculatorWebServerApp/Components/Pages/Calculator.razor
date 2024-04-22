@@ -2,25 +2,95 @@
 
 <PageTitle>Calculator</PageTitle>
 
-<style>
-    body {
-        background-color: #eceff3;
-    }
-</style>
 
-<div class="outer-box">
-    <div class="inner-box">
-        <div class="row">
-            <div class="col">
-                <H1>Calculator</h1>
-            </div>
-            <div class="col">
-                <button class="clear-button">Clear</button>
-            </div>
-        </div>
-        <OutputBox/>
-        <UserInput/>
-        <Buttons/>
+<div class="row topset">
+    <div class="col">
+        <H1>Calculator</h1>
+    </div>
+    <div class="col">
+        <button class="button clear-button">Clear</button>
     </div>
 </div>
+
+
+<div class="output-section">
+    <label class="output-text">Enter value(s) below and select an operation</label>
+</div>
+
+<div class="row pad">
+    <div class="col">
+        <div class="col-input">Input A</div>
+        <div class="textbox">
+            <input id="inputA" placeholder="0" class="textbox">
+        </div>
+    </div>
+    <div class="col">
+        <div class="col-input">
+            Input B
+        </div>
+        <div class="textbox">
+            <input id="inputB" placeholder="0" class="textbox">
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col">
+        <!-- First column -->
+        <div class="row">
+            <div class="col-head">
+                A and B
+            </div>
+            <div class="col-button">
+                <button type="button" class="button">A + B</button>
+            </div>
+            <div class="col-button">
+                <button type="button" class="button">A - B</button>
+            </div>
+            <div class="col-button">
+                <button type="button" class="button">A * B</button>
+            </div>
+            <div class="col-button">
+                <button type="button" class="button">A / B</button>
+            </div>
+            <div class="col-button">
+                <button type="button" class="button">A == B</button>
+            </div>
+            <div class="col-button">
+                <button type="button" class="button">A ^ B</button>
+            </div>
+            <div class="col-button">
+                <button type="button" class="button">A log B</button>
+            </div>
+            <div class="col-button">
+                <button type="button" class="button">A root B</button>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <!-- Second column -->
+        <div class="row">
+            <div class="col-head">
+                A only
+            </div>
+            <div class="col-button">
+                <button type="button" class="button">A !</button>
+            </div>
+            <div class="col-button">
+                <button type="button" class="button">sin A</button>
+            </div>
+            <div class="col-button">
+                <button type="button" class="button">cos A</button>
+            </div>
+            <div class="col-button">
+                <button type="button" class="button">tan A</button>
+            </div>
+            <div class="col-button">
+                <button type="button" class="button">1 / A</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 

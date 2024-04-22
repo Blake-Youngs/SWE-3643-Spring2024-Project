@@ -2,39 +2,76 @@
     color: #000000;
 }
 
-.inner-box {
-    position: fixed;
-    background-color: #fdfdfd;
-    padding: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 500px;
-    height: 800px;
-
-}
-
-.outer-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.clear-button {
-    width: 100%;
-}
-
-.row {
-    display: col;
+.topset {
     place-items: center;
     padding: 10px;
 }
 
-.clear-button {
+.output-section {
+    display: grid;
+    place-items: center;
     width: 100%;
+    height: 10%;
+    background-color: #ffecd7;
+    font-weight: bold;
+}
+
+
+.textbox {
+    width: 100%;
+    text-align: right;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.input-options {
+    width: 100%;
+    height: 10%;
+}
+
+.col-input {
+    font-weight: bold;
+}
+
+
+.button {
+    width: 100%;
+    height: 100%;
     color:#000000;
     background-color:#EBEBEB;
     border: 1px solid black;
     font-size: 18px;
     border-radius: 5px;
+}
+
+.col-head {
+    min-height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #e5e5e5;
+    border-right: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+}
+
+.col-button {
+    padding: 8px;
+}
+
+.col-input {
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.pad {
+    padding: 15px;
+    place-items: center;
+}
+
+.max {
+    width: 100%;
+    height: 100%;
 }

@@ -1,8 +1,0 @@
-﻿.output-section {
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 10%;
-    background-color: #ffecd7;
-    font-weight: bold;
-}
