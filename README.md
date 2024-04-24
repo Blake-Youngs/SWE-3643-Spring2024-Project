@@ -1,4 +1,4 @@
-# SWE-3643-Spring2024-Project
+# KSU SWE 3643 Software Testing and Quality Assurance Semester Project: Web-Based Calculator
 
 ## Introduction
 
