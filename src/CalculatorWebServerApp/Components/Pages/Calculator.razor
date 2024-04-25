@@ -1,4 +1,7 @@
 ﻿@page "/"
+@rendermode InteractiveServer
+@inject IJSRuntime JsRuntime
+@inject HttpClient Http
 
 <PageTitle>Calculator</PageTitle>
 
@@ -13,84 +16,45 @@
 </div>
 
 
-<div class="output-section">
-    <label class="output-text">Enter value(s) below and select an operation</label>
-</div>
 
-<div class="row pad">
+<label class="output-section">Output</label>
+
+<div class="row user-input">
     <div class="col">
-        <div class="col-input">Input A</div>
-        <div class="textbox">
-            <input id="inputA" placeholder="0" class="textbox">
-        </div>
+        <div class="text">Input A</div>
+        <input id="inputA" placeholder="0" class="textbox">
     </div>
     <div class="col">
-        <div class="col-input">
-            Input B
-        </div>
-        <div class="textbox">
-            <input id="inputB" placeholder="0" class="textbox">
-        </div>
+        <div class="text">Input B</div>
+        <input id="inputB" placeholder="0" class="textbox">
     </div>
 </div>
 
 
 <div class="row">
     <div class="col">
-        <!-- First column -->
-        <div class="row">
-            <div class="col-head">
-                A and B
-            </div>
-            <div class="col-button">
-                <button type="button" class="btn button">A + B</button>
-            </div>
-            <div class="col-button">
-                <button type="button" class="btn button">A - B</button>
-            </div>
-            <div class="col-button">
-                <button type="button" class="btn button">A * B</button>
-            </div>
-            <div class="col-button">
-                <button type="button" class="btn button">A / B</button>
-            </div>
-            <div class="col-button">
-                <button type="button" class="btn button">A == B</button>
-            </div>
-            <div class="col-button">
-                <button type="button" class="btn button">A ^ B</button>
-            </div>
-            <div class="col-button">
-                <button type="button" class="btn button">A log B</button>
-            </div>
-            <div class="col-button">
-                <button type="button" class="btn button">A root B</button>
-            </div>
-        </div>
+        <div class="col-head"> A and B</div>
+        <button class="button btn">A + B</button>
+        <button class="btn button">A - B</button>
+        <button class="btn button">A * B</button>
+        <button class="btn button">A / B</button>
+        <button class="btn button">A == B</button>
+        <button class="btn button">A ^ B</button>
+        <button class="btn button">A log B</button>
+        <button class="btn button">A root B</button>
     </div>
     <div class="col">
-        <!-- Second column -->
-        <div class="row">
-            <div class="col-head">
-                A only
-            </div>
-            <div class="col-button">
-                <button type="button" class="btn button">A !</button>
-            </div>
-            <div class="col-button">
-                <button type="button" class="btn button">sin A</button>
-            </div>
-            <div class="col-button">
-                <button type="button" class="btn button">cos A</button>
-            </div>
-            <div class="col-button">
-                <button type="button" class="btn button">tan A</button>
-            </div>
-            <div class="col-button">
-                <button type="button" class="btn button">1 / A</button>
-            </div>
-        </div>
+        <div class="col-head"> A only</div>
+        <button class="btn button">A !</button>
+        <button class="btn button">sin A</button>
+        <button class="btn button">cos A</button>
+        <button class="btn button">tan A</button>
+        <button class="btn button">1 / A</button>
     </div>
 </div>
 
 
+
+@code {
+
+}
