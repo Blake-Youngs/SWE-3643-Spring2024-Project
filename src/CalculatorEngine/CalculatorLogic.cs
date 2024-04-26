@@ -54,8 +54,10 @@ public class CalculatorLogic(int precision = 8) : ICalculatorLogic {
 
     public double Root(double inputA, double inputB) {
         // Preq-ENGINE-11
+        if (inputA <= 0)
+            throw new ArgumentException(inputA + " must be > 0.");
         if (inputB == 0)
-            throw new DivideByZeroException(inputB + " cannot be 0.");
+            throw new AggregateException(inputB + " cannot be 0.");
 
         return Math.Pow(inputA, 1 / inputB);
     }

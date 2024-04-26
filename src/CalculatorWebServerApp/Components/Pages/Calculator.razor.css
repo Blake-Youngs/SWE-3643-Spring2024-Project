@@ -24,13 +24,17 @@
     font-weight: bold;
 }
 
-.output-section {
-    display: grid;
-    place-items: center;
+.outer-box {
     width: 100%;
     height: 10%;
-    background-color: #ffecd7;
+    padding: 35px;
+    background-color: #FFECD7;
+}
+
+.output-section {
     font-weight: bold;
+    display: grid;
+    place-items: center;
 }
 
 .textbox {

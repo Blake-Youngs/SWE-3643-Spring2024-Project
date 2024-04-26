@@ -1,7 +1,5 @@
 ﻿@page "/"
 @rendermode InteractiveServer
-@inject IJSRuntime JsRuntime
-@inject HttpClient Http
 
 <PageTitle>Calculator</PageTitle>
 
@@ -11,22 +9,26 @@
         <H1>Calculator</h1>
     </div>
     <div class="col">
-        <button class="btn button">Clear</button>
+        <button @onclick="Clear" class="btn button">Clear</button>
     </div>
 </div>
 
 
+<div class="output-box">
+    <label id="equation" class="output-section" style="background-color: @_backColor; color: @_fontColor">@_calculateModel.Result</label>
+    <label id="equationResult" class="output-section" style="background-color: @_backColor; color: @_fontColor">@_calculateModel.Output</label>
+</div>
 
-<label class="output-section">Output</label>
+
 
 <div class="row user-input">
     <div class="col">
         <div class="text">Input A</div>
-        <input id="inputA" placeholder="0" class="textbox">
+        <input @bind="_calculateModel.OperandA" placeholder="0" class="textbox" id="inputA">
     </div>
     <div class="col">
         <div class="text">Input B</div>
-        <input id="inputB" placeholder="0" class="textbox">
+        <input @bind="_calculateModel.OperandB" placeholder="0" class="textbox" id="inputB">
     </div>
 </div>
 
@@ -34,27 +36,21 @@
 <div class="row">
     <div class="col">
         <div class="col-head"> A and B</div>
-        <button class="button btn">A + B</button>
-        <button class="btn button">A - B</button>
-        <button class="btn button">A * B</button>
-        <button class="btn button">A / B</button>
-        <button class="btn button">A == B</button>
-        <button class="btn button">A ^ B</button>
-        <button class="btn button">A log B</button>
-        <button class="btn button">A root B</button>
+        <button @onclick="Add" class="btn button">A + B</button>
+        <button @onclick="Subtract" class="btn button">A - B</button>
+        <button @onclick="Multiply" class="btn button">A * B</button>
+        <button @onclick="Divide" class="btn button">A / B</button>
+        <button @onclick="Equal" class="btn button">A == B</button>
+        <button @onclick="RaisePower" class="btn button">A ^ B</button>
+        <button @onclick="Log" class="btn button">A log B</button>
+        <button @onclick="Root" class="btn button">A root B</button>
     </div>
     <div class="col">
         <div class="col-head"> A only</div>
-        <button class="btn button">A !</button>
-        <button class="btn button">sin A</button>
-        <button class="btn button">cos A</button>
-        <button class="btn button">tan A</button>
-        <button class="btn button">1 / A</button>
+        <button @onclick="Factorial" class="btn button">A !</button>
+        <button @onclick="Sine" class="btn button">sin A</button>
+        <button @onclick="Cosine" class="btn button">cos A</button>
+        <button @onclick="Tangent" class="btn button">tan A</button>
+        <button @onclick="Reciprocal" class="btn button">1 / A</button>
     </div>
 </div>
-
-
-
-@code {
-
-}
