@@ -74,7 +74,7 @@ public partial class CalculatorEngineUnitTests {
         var inputA = 8;
         var inputB = 0;
 
-        Assert.Throws<DivideByZeroException>(() => { _calculatorEngine.Root(inputA, inputB); });
+        Assert.Throws<ArgumentException>(() => { _calculatorEngine.Root(inputA, inputB); });
     }
 
     [Test]

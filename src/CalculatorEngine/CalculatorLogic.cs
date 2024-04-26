@@ -57,7 +57,7 @@ public class CalculatorLogic(int precision = 8) : ICalculatorLogic {
         if (inputA <= 0)
             throw new ArgumentException(inputA + " must be > 0.");
         if (inputB == 0)
-            throw new AggregateException(inputB + " cannot be 0.");
+            throw new ArgumentException(inputB + " cannot be 0.");
 
         return Math.Pow(inputA, 1 / inputB);
     }
