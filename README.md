@@ -24,7 +24,7 @@ This repository contains the source code for a Blazer Web Application, alongside
 
 The structure of the calculator is a solution with 4 projects: CalculatorEngine, CalculatorWebServerApp, CalculatorEngineUnitTests, and CalculatorEndToEndTests. By having a split up architecture into their responsibilities it results in a low coupling and high cohesion. The Web server is composed of the controller, model/data, and the view. Additionally, tests are utilized in to cover the Calculation logic and to tests components of the web application.
 
-![](README.assets\CalculatorArchitecture.png)
+![README.assets/CalculatorArchitecture.png](README.assets/CalculatorArchitecture.png)
 
 ## Environment
 
@@ -58,7 +58,7 @@ Steps to executing the Web Application:
 
    ​     You have done it correctly if your screen looks like this
 
-   ![](README.assets\ServerRunning.png)
+   ![README.assets/ServerRunning.png](README.assets/ServerRunning.png)
 
 4. Copy the URL into your browser from the output to connect to the calculator. It should be `https://localhost:5167`.
 
@@ -85,9 +85,9 @@ Steps to executing the Unit Tests for the Calculator Engine:
 
 ## Reviewing Unit Test Coverage
 
-With l of the unit tests executed it shows the 100% coverage of the CaluclatorEngine project.
+With all of the unit tests executed it shows the 100% coverage of the CaluclatorEngine project.
 
-![](README.assets\UnitTestsCoverage.png)
+![README.assets/UnitTestsCoverage.png](README.assets/UnitTestsCoverage.png)
 
 ## Executing End-to-End Tests
 
