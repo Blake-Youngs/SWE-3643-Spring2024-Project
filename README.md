@@ -110,4 +110,4 @@ Steps to executing the End-to-End Tests:
 
 ## Final Video Presentation
 
-Presentation: https://youtu.be/NhOkguncR-I
+[Video Presentation](https://youtu.be/NhOkguncR-I)
