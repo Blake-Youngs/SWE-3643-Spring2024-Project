@@ -25,7 +25,7 @@ public class Tests : PageTest {
     }
     
     [Test]
-    public async Task CalculatorWebUi_DivideOperationByZero_ReturnsNotANumberError() {
+    public async Task CalculatorWebUi_DivideABy0_ReturnsNotANumber() {
         //preq-E2E-Test-6
         await Page.ClickAsync("#inputA");
         await Page.FillAsync("#inputA", "5");
@@ -37,7 +37,7 @@ public class Tests : PageTest {
     }
     
     [Test]
-    public async Task CalculatorWebUi_AddOperationWithNumbers_ReturnsSum() {
+    public async Task CalculatorWebUi_AddNumbers_ReturnsSum() {
         //preq-E2E-Test-6
         CalculatorLogic calculatorEngine = new CalculatorLogic();
         String expectedResult = calculatorEngine.Addition(-75, 89).ToString();
@@ -52,7 +52,7 @@ public class Tests : PageTest {
     }
     
     [Test]
-    public async Task CalculatorWebUi_AddOperationWithTextValues_ReturnsInvalidInputError() {
+    public async Task CalculatorWebUi_OperationWithTextInput_ReturnsInvalidInput() {
         //preq-E2E-Test-6
         await Page.ClickAsync("#inputA");
         await Page.FillAsync("#inputA", "15");
@@ -64,7 +64,7 @@ public class Tests : PageTest {
     }
     
     [Test]
-    public async Task CalculatorWebUi_AddAndClear_ReturnsToDefaultState() {
+    public async Task CalculatorWebUi_ClearButton_ReturnsToDefaultState() {
         //preq-E2E-Test-6
         await Page.ClickAsync("#inputA");
         await Page.FillAsync("#inputA", "15");

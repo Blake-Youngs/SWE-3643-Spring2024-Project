@@ -54,8 +54,6 @@ public class CalculatorLogic(int precision = 8) : ICalculatorLogic {
 
     public double Root(double inputA, double inputB) {
         // Preq-ENGINE-11
-        if (inputA <= 0)
-            throw new ArgumentException(inputA + " must be > 0.");
         if (inputB == 0)
             throw new ArgumentException(inputB + " cannot be 0.");
 
